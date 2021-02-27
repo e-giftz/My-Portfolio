@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/* Styling the body of the page */
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: #d9dcd6;
+    line-height: 1.3;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #4c688c;
+    color: #ffffff;
+}
+h1 {
+    font-size: 200%;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    min-width: 300px;
+}
+.navigation a {
+    color: #b9c6ae;
+    font-weight: bold;
+    text-decoration: none;
+}
+.navigation a:hover {
+    color: #fff;
+}
+main {
+    display: flex;
+    flex: 1 1 0;
+    max-width: 96%;
+    margin: 2% auto;
+}
+
