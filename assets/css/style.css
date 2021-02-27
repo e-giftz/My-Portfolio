@@ -13,7 +13,6 @@ body{
 header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 2%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: #4c688c;
@@ -38,14 +37,39 @@ h1 {
 }
 main {
     display: flex;
-    /*flex: 1 1 0;
-    max-width: 96%;
-    margin: 2% auto;*/
+    flex-wrap: wrap;
+    flex: 1 1 0;
+    margin: 2%;
 }
 /* Styling the photo as background  */
 .gift {
     background-image: url("../images/IMG_9631.jpg");
     
    
+}
+.about-me {
+    display: flex;
+    padding: 3px;
+    text-align: center;
+}
+h2 {
+    font-size: 50px;
+}
+.verticalLine {
+    border-right: 3px solid #4c688c;
+    height:20px;
+    padding: 20px;
+    font-size: 48px;
+    height: 150px;
+    color: #4c688c;
+}
+p {
+    margin: 20px;
+    font-size: 15px;
+    text-align: left;
+}
+.work {
+    display: flex;
+
 }
 
