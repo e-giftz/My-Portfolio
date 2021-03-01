@@ -3,7 +3,7 @@
     padding: 0;
     margin: 0;
 }
-/* Set variable */
+/* Set variables for colors used */
 :root {
     --blue: #0965de;
     --white: #d9dcd6;
@@ -24,33 +24,31 @@ header {
     background-color: var(--white);
     color: var(--other);
 }
+/* Set h1 and h2 elements in common */
+h1,
+h2 {
+    font-weight: bold;
+}
 /* Styling h1 tag */
 h1 {
     font-size: 200%;
-    font-weight: bold;
-}
-h2 {
-    font-size: 100%;
-    font-style: oblique;
-    font-weight: bold;
-    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
 /* Styling the nav class */
 .navigation {
     display: flex;
     justify-content: space-between;
-    min-width: 350px;
 }
 /* Styling the navigation a tags for the links*/
 .navigation a {
     color: var(--other);
     font-weight: bold;
     text-decoration: none;
+    padding: 14px 20px;
 }
 .navigation a:hover {
     color: #fff;
 }
-/* Main section contents styling */
+/* Main section container styling */
 main {
     display: flex;
     flex-wrap: wrap;
@@ -73,6 +71,12 @@ main {
     transform: translate(-60%, -30%);
     color: var(--white);
 }
+/* Set properties for h2 tag */
+h2 {
+    font-size: 100%;
+    font-style: oblique;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
 /* Style container holding the profile image */
 .profile-image {
     position: absolute;
@@ -82,59 +86,57 @@ main {
     right: 3%;  
     border: 2px solid black;
 }
+/* Set attributes to the profile image img tag */
 .profile-image img {
     width: 150px;
     height: 150px;
 }
-/* Styling the about me section  */
-.about-me {
+/* Main contents with common elements grouped together */
+.about-me, .work, .contact-me, .myworklist {
     display: flex;
+}
+/* Now set attributes to the about me, work and contact me sections */
+.about-me {
     padding: 3px;
     text-align: right;
 }
 .work {
-    display: flex;
     padding: 16px;
 }
 .contact-me {
-    display: flex;
     padding: 3px;
     text-align: right;
 }
+/* Set styles for container holding work contents */
 .myworklist {
-    display: flex;
     flex-wrap: wrap;
     width: 80%;
     margin: 50px auto;
 }
-.verticalLine {
+/* Set styles for elements in common */
+.verticalLine, .verticalLine-2, .verticalLine-3 {
     border-right: 2px solid var(--other);
-    height: fit-content;
     padding: 20px;
-    margin-left: 47px;
     font-size: 30px;
     color: var(--other);
 }
+.verticalLine {
+    margin-left: 47px;
+}
 .verticalLine-2 {
-    border-right: 2px solid var(--other);
-    padding: 20px;
-    font-size: 30px;
-    margin-left: 43px;
-    color: var(--other);    
+    margin-left: 43px;    
 }
 .verticalLine-3 {
-    border-right: 2px solid var(--other);
     height: fit-content;
-    padding: 20px;
-    margin-left: 22px;
-    font-size: 30px;
-    color: var(--other);   
+    margin-left: 22px;  
 }
+/* Styling paragraph tag */
 p {
     margin: 20px;
     font-size: 15px;
     text-align: left;
 }
+/* Style image elements for the work section */
 .mywork img {
     width: 100%;
     min-width: 400px;
@@ -147,11 +149,16 @@ p {
 }
 figcaption {
     background-color: var(--other);
-    color: white;
-    font-style: italic;
     padding: 20px;
 }
-/* Set styles for contact me sections */
+/* Set styles for the work images a tag */
+.mywork a {
+    color: var(--white);
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: none;
+}
+/* Set styles for contact me sections including section header tag */
 .mycontact  {
     flex: 1 0 200px;
     padding: 15px;
@@ -167,7 +174,7 @@ figcaption {
 /* Set footer styles */
 footer {
     padding: 30px;
-    clear: both;
+    flex-shrink: 0;
     text-align: center;
     background-color: var(--blue);
 }
@@ -175,4 +182,14 @@ footer {
 h3 {
     font-size: 20px;
 }
+/* For responsive design, set min-width values for mobile screens to go from narrow to wide */
+/*@media screen and (max-width: 768px) and (max-width: 320px) {
+    .navigation {
+        flex-direction: column;
+    }
+    .contact-me {
+        flex: 0 1 50%;
+    }
+}*/
+
 
