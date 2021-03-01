@@ -106,6 +106,7 @@ h2 {
 .contact-me {
     padding: 3px;
     text-align: right;
+    flex-wrap: wrap;
 }
 /* Set styles for container holding work contents */
 .myworklist {
@@ -127,8 +128,8 @@ h2 {
     margin-left: 43px;    
 }
 .verticalLine-3 {
-    height: fit-content;
-    margin-left: 22px;  
+    margin-left: 22px; 
+    flex: 0; 
 }
 /* Styling paragraph tag */
 p {
@@ -139,13 +140,15 @@ p {
 /* Style image elements for the work section */
 .mywork img {
     width: 100%;
-    min-width: 400px;
+    /*min-width: 400px;*/
+    max-width: 100%;
 }
 .mywork {
     flex: 1 0 200px;
     padding: 10px;
     margin: 5px;
     border: 2px solid var(--other);
+    width: 100%
 }
 figcaption {
     background-color: var(--other);
@@ -160,7 +163,7 @@ figcaption {
 }
 /* Set styles for contact me sections including section header tag */
 .mycontact  {
-    flex: 1 0 200px;
+    flex: 0;
     padding: 15px;
     text-align: center;
     margin: 30px;
@@ -182,14 +185,51 @@ footer {
 h3 {
     font-size: 20px;
 }
-/* For responsive design, set min-width values for mobile screens to go from narrow to wide */
-/*@media screen and (max-width: 768px) and (max-width: 320px) {
-    .navigation {
+/* For responsive design, set max-width values for  larger screens of 992px */
+@media screen and (max-width: 992px) {
+    .mywork {
+        width: 50%;
+    }
+    nav, main {
         flex-direction: column;
     }
-    .contact-me {
-        flex: 0 1 50%;
+}
+/* For responsive design, set max-width values for Ipad screens from 768px */
+@media screen and (max-width: 768px) {
+    .mywork {
+        width: 100%;
     }
-}*/
+    .navigation, main {
+        flex-direction: column;
+    }
+}
+/* For responsive design, set max-width values for smaller phone screens of 480px */
+@media screen and (max-width: 480px) {
+    header {
+        font-size: 75%;
+    }
+    .hero-text {
+        transform: translate(-50%, -20%);
+    }
+    /* Reduce profile  image size to fit new screen size */
+    .profile-image{
+        width: 120px;
+        height: 120px;
+    }
+    .mywork img {
+        width: 100%;
+    }
+    /* Remove extra padding and font size for the verticallines */
+    .verticalLine, .verticalLine-2, .verticalLine-3 {
+        padding: 7px;
+        font-size: 20px;
+    }
+    .myworklist {
+        width: 33.3%;
+        margin: 0px;
+        height: 33.30%;
+    }
+    
+}
 
 
