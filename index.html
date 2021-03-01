@@ -22,9 +22,16 @@
         </nav>
     </header>
     <main>
-        <!-- Section holding background image -->
-        <section class="hero"></section>
-
+        <section class="hero-image" role="img" aria-label="Web Programmer Network">
+            <div class="hero-text">
+                <h2 style="font-size:50px">Creative Web Developer</h2>
+            </div>
+            <!-- Set the container to hold the profile image -->
+            <div class="profile-image">
+                <img src="assets/images/photo-avatar.png" alt="Photo Avatar"/>
+            </div>
+        </section>
+        
         <section class="about-me">
             <div class="verticalLine">About Me</div>
             <p>My name is It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
@@ -34,37 +41,49 @@
             <section class="verticalLine-2">Work</section>
             <!-- Using div tag as a container for the image boxes -->
             <div class="myworklist">
-                <figure class="photo 1">
+                <figure class="mywork">
                     <img src="assets/images/HTML-CSS.jpg" alt="HTML/CSS"/>
                     <figcaption>HTML/CSS</figcaption>
                 </figure>
-                <figure class="photo 2">
+                <figure class="mywork">
                     <img src="assets/images/WebApi.jpeg" alt="Web API"/>
                     <figcaption>Web API</figcaption>
                 </figure>
                 
-                <figure class="photo 3">
+                <figure class="mywork">
                     <img src="assets/images/ecommercewebapp.jpg" alt="Ecommerce web app"/>
                     <figcaption>E-commerce Web App</figcaption>
                 </figure>
-                <figure class="photo 4">
+                <figure class="mywork">
                     <img src="assets/images/photoapp.jpg" alt="Photo App"/>
                     <figcaption>Photo App</figcaption>
+                </figure>
+                <figure class="mywork">
+                    <img src="assets/images/code-refactor-small.png" alt="Code Refactor"/>
+                    <figcaption>Code Refactor Project</figcaption>
                 </figure>
             </div>
         </section>
         <section class="contact-me">
             <!-- Section to hold the vertical line -->
             <div class="verticalLine-3">Contact Me</div>
-            <div class="mycontact">
-                <figure class="phone">
-
-                </figure>
-
-            </div>
-            
+            <!-- Set the sections for each content in the contact me box -->
+            <section class="mycontact">
+                <header>(613) 5556666</header>
+            </section>   
+            <section class="mycontact">
+                <header>myportfolio@gmail.com</header>
+            </section>
+            <section class="mycontact">
+                <header>GitHub</header>
+            </section>
+            <section class="mycontact">
+                <header>LinkedIn</header>
+            </section>
         </section>
 
     </main>
-    <footer>&copy; Copyright 2021 Gift Portfolio Website Productions</footer>
+    <footer>
+        <h3>&copy; Copyright 2021 Gift Developer Portfolio Productions</h3>
+    </footer>
 </body>
