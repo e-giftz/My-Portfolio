@@ -3,20 +3,22 @@
     padding: 0;
     margin: 0;
 }
+
 /* Set variables for colors used */
 :root {
     --blue: #0965de;
     --white: #d9dcd6;
     --other: #2a607c;
 }
+
 /* Styling the body of the page */
 body{
     font: 16px Helvetica, Arial, Sans-Serif;
-    /*margin: 0 auto;*/
     padding: 24px;
     line-height: 24px;
     background-color: var(--white);
 }
+
 /* display header */
 header {
     display: flex;
@@ -25,20 +27,24 @@ header {
     background-color: var(--white);
     color: var(--other);
 }
+
 /* Set h1 and h2 elements in common */
 h1,
 h2 {
     font-weight: bold;
 }
+
 /* Styling h1 tag */
 h1 {
     font-size: 200%;
 }
+
 /* Styling the nav class */
 .navigation {
     display: flex;
     justify-content: space-between;
 }
+
 /* Styling the navigation a tags for the links*/
 .navigation a {
     color: var(--other);
@@ -46,14 +52,17 @@ h1 {
     text-decoration: none;
     padding: 14px 20px;
 }
+
 .navigation a:hover {
     color: var(--blue);
 }
+
 /* Main section container styling */
 main {
     display: flex;
     flex-direction: column;
 }
+
 /* Styling the hero image as background  */
 .hero-image {
     height: 400px;
@@ -63,6 +72,7 @@ main {
     width: 100%;
     position: relative;
 }
+
 /* Set the hero image text */
 .hero-text {
     text-align: center;
@@ -72,12 +82,14 @@ main {
     transform: translate(-60%, -30%);
     color: var(--white);
 }
+
 /* Set properties for h2 tag */
 h2 {
     font-size: 100%;
     font-style: oblique;
     text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
+
 /* Style container holding the profile image */
 .profile-image {
     position: absolute;
@@ -87,32 +99,30 @@ h2 {
     right: -1%;  
     border: 2px solid black;
 }
+
 /* Set attributes to the profile image img tag */
 .profile-image img {
     width: 150px;
     height: 150px;
 }
-/* Main contents with common elements grouped together 
-.about-me, .work, .contact-me, .myworklist {
-    display: flex;
-}*/
+
 /* Now set attributes to the about me, work and contact me sections */
 .about-me, 
 .work,
 .contact-me {
     padding: 16px;
 }
+
 /* Set styles for container holding work contents */
 .myworklist, .contact-list {
-    /*flex-wrap: wrap;
-    width: 80%;
-    margin: 50px auto;*/
     margin: 8px -16px;
 }
+
 .myworklist,
 .myworklist > .column {
     padding: 8px;
 }
+
 .column {
     float: left;
     width: 25%;
@@ -124,6 +134,7 @@ h2 {
     display: table;
     clear: both;
 }
+
 .mywork, .myfirstwork {
     /*flex: 1 0 200px;*/
     padding: 10px;
@@ -132,56 +143,23 @@ h2 {
     width: 100%;
     overflow: hidden;
 }
+
 .mywork {
     height: 300px;
 }
-/* Set styles for elements in common */
-.verticalLine, .verticalLine-2, .verticalLine-3 {
-    /*border-right: 2px solid var(--other);*/
-    float: left;
-    padding: 20px;
-    font-size: 30px;
-    color: var(--other);
-}
-/*.verticalLine {
-    /*margin-left: 47px;
-    float: left;
-}*/
-.verticalLine-2 {
-    margin-left: 58px;    
-}
-.verticalLine-3 {
-    margin-left: -27px; 
-    /*flex: 0;*/ 
-}
-.content {
-    display: flex;
-    border-left: 2px solid var(--other) ;
-}
-/* Styling paragraph tag */
-.content p {
-    margin: 20px;
-    font-size: 15px;
-    text-align: justify;
-}
+
 /* Style image elements for the work section */
 .mywork img, .myfirstwork img {
     width: 100%;
-    /*min-width: 400px;*/
     max-width: 100%;
     transition: transform .5s ease;
 }
+
 .mywork:hover img,
 .myfirstwork:hover img {
     transform: scale(1.1)
 }
-figcaption {
-    background-color: var(--other);
-    padding: 20px;
-}
-figcaption a:hover {
-    color: #fff;
-}
+
 /* Set styles for the work images a tag */
 .mywork a, .myfirstwork a {
     color: var(--white);
@@ -189,6 +167,45 @@ figcaption a:hover {
     font-style: italic;
     text-decoration: none;
 }
+
+/* Set styles for elements in common */
+.verticalLine, .verticalLine-2, .verticalLine-3 {
+    float: left;
+    padding: 20px;
+    font-size: 30px;
+    color: var(--other);
+}
+
+.verticalLine-2 {
+    margin-left: 58px;    
+}
+
+.verticalLine-3 {
+    margin-left: -27px; 
+    /*flex: 0;*/ 
+}
+
+.content {
+    display: flex;
+    border-left: 2px solid var(--other) ;
+}
+
+/* Styling paragraph tag */
+.content p {
+    margin: 20px;
+    font-size: 15px;
+    text-align: justify;
+}
+
+figcaption {
+    background-color: var(--other);
+    padding: 20px;
+}
+
+figcaption a:hover {
+    color: #fff;
+}
+
 /* Set styles for contact me sections including section header tag */
 .mycontact  {
     float: left;
@@ -196,12 +213,14 @@ figcaption a:hover {
     text-align: center;
     margin: 30px;
 }
+
 .mycontact p {
     font-size: 20px;
     font-weight: bold;
     text-decoration: underline;
     color: var(--other);
 }
+
 /* Set footer styles */
 footer {
     padding: 30px;
@@ -209,10 +228,12 @@ footer {
     text-align: center;
     background-color: var(--blue);
 }
+
 /* Set style for footer h3 tag */
 h3 {
     font-size: 20px;
 }
+
 /* For responsive design, set max-width values for  larger screens of 992px */
 @media screen and (max-width: 900px) {
     /*.mywork {
@@ -225,6 +246,7 @@ h3 {
         flex-direction: column;
     }
 }
+
 /* For responsive design, set max-width values for Ipad screens from 768px */
 @media screen and (max-width: 600px) {
     .column {
@@ -234,39 +256,24 @@ h3 {
         flex-direction: column;
     }
 }
-/* For responsive design, set max-width values for smaller phone screens of 480px 
+
+/* For responsive design, set max-width values for smaller phone screens of 480px */
 @media screen and (max-width: 480px) {
     header {
-        font-size: 75%;
+        font-size: 100%;
     }
-    .column {
+    body {
+        padding: 0px;
+    }
+    .column, .myfirstwork {
         width: 75%;
     }
-    /*.navigation, main {
+    .navigation, main {
         flex-direction: column;
     }
-    .hero-text {
-        transform: translate(-50%, -20%);
-    }
-    /* Reduce profile  image size to fit new screen size 
-    .profile-image{
-        width: 115px;
-        height: 115px;
-    }
-    /*.mywork img {
+    /*.mywork img, myfirstwork img {
         width: 100%;
-    }*/
-    /* Remove extra padding and font size for the verticallines 
-    .verticalLine, .verticalLine-2, .verticalLine-3 {
-        padding: 7px;
-        font-size: 20px;
-    }
-    /*.myworklist {
-        width: 33.3%;
-        margin: 0px;
-        height: 33.30%;
-    }
-    
-}*/
+    } */
+}
 
 
