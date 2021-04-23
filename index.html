@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Web Developer Portfolio</title>
   <link rel="stylesheet" href="./assets/css/reset.css" />
-  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" type="text/css"/>
 </head>
 
 <body>
@@ -14,8 +14,8 @@
         <h1>Nwakaego Gift Eze</h1>
         <nav>
             <ul class="navigation">
-                <li><a href="#work">Portfolio</a></li>
                 <li><a href="#about-me">About Me</a></li>
+                <li><a href="#work">Portfolio</a></li>
                 <li><a href="#contact-me">Contact</a></li>
                 <li><a href="#">Resume</a></li>
             </ul>
@@ -34,54 +34,70 @@
         
         <section id="about-me" class="about-me">
             <div class="verticalLine">About Me</div>
-            <p>Gift is an enthusiastic and dedicated Web developer with a number of successful projects bagged. Apart from being creative, Gift showcases a lot of attention to detail when working and consulting with a client so that there is a good understanding of the project requirements and objectives before embarking on a specific project. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+            <div class="content">
+                <p>Gift is an enthusiastic and dedicated Web developer with a number of successful projects bagged. Apart from being creative, Gift showcases a lot of attention to detail when working and consulting with a client so that there is a good understanding of the project requirements and objectives before embarking on a specific project. It is a long established fact that a reader will be distracted by 
+                    the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+            </div>
         </section>
         <section id="work" class="work">
             <!-- Section to hold the vertical line -->
-            <section class="verticalLine-2">Work</section>
+            <div class="verticalLine-2">Work</div>
             <!-- Using div tag as a container for the image boxes -->
-            <div class="myworklist">
-                <figure class="mywork">
-                    <img src="assets/images/HTML-CSS.jpg" alt="HTML/CSS"/>
-                    <figcaption><a href="#">HTML/CSS</a></figcaption>
-                </figure>
-                <figure class="mywork">
-                    <img src="assets/images/WebApi.jpeg" alt="Web API"/>
-                    <figcaption><a href="#">Web API</a></figcaption>
-                </figure>
-                
-                <figure class="mywork">
-                    <img src="assets/images/ecommercewebapp.jpg" alt="Ecommerce web app"/>
-                    <figcaption><a href="#">E-commerce Web App</a></figcaption>
-                </figure>
-                <figure class="mywork">
-                    <img src="assets/images/photoapp.jpg" alt="Photo App"/>
-                    <figcaption><a href="#">Photo App</a></figcaption>
-                </figure>
-                <figure class="mywork">
-                    <img src="assets/images/code-refactor-small.png" alt="Code Refactor"/>
-                    <figcaption><a href="https://github.com/e-giftz/Code-Refactor">Code Refactor Project</a></figcaption>
-                </figure>
+            <div class="content">
+                <div class="myworklist">
+                    <figure class="mywork">
+                        <a href="https://github.com/e-giftz/Code-Refactor"><img src="assets/images/code-refactor-small.png" alt="Code Refactor" style="width: 100%"/></a>
+                        <figcaption><a href="https://github.com/e-giftz/Code-Refactor">Code Refactor Project</a></figcaption>
+                    </figure>
+                    <div class="column">
+                        <figure class="mywork">
+                            <a href="#"><img src="assets/images/HTML-CSS.jpg" alt="HTML/CSS" style="width: 100%"/></a>
+                            <figcaption><a href="#">HTML/CSS</a></figcaption>
+                        </figure>
+                    </div>
+                    <div class="column">
+                        <figure class="mywork">
+                            <img src="assets/images/WebApi.jpeg" alt="Web API" style="width: 100%"/>
+                            <figcaption><a href="#">Web API</a></figcaption>
+                        </figure>
+                    </div>
+                    <div class="column">
+                        <figure class="mywork">
+                            <img src="assets/images/ecommercewebapp.jpg" alt="Ecommerce web app" style="width: 100%"/>
+                            <figcaption><a href="#">E-commerce Web App</a></figcaption>
+                        </figure>
+                    </div>
+                    <div class="column">
+                        <figure class="mywork">
+                            <img src="assets/images/photoapp.jpg" alt="Photo App" style="width: 100%"/>
+                            <figcaption><a href="#">Photo App</a></figcaption>
+                        </figure>
+                    </div>
+                    
+                </div>
             </div>
+            
         </section>
         <section id="contact-me" class="contact-me">
             <!-- Section to hold the vertical line -->
             <div class="verticalLine-3">Contact Me</div>
-            <!-- Set the sections for each content in the contact me box -->
-            <section class="mycontact">
-                <header>111-5556666</header>
-            </section>   
-            <section class="mycontact">
-                <header>myportfolio@gmail.com</header>
-            </section>
-            <section class="mycontact">
-                <header>GitHub</header>
-            </section>
-            <section class="mycontact">
-                <header>LinkedIn</header>
-            </section>
+            <div class="content">
+                <!-- Set the sections for each content in the contact me box -->
+                <section class="mycontact">
+                    <header>111-5556666</header>
+                </section>
+                <section class="mycontact">
+                    <header>myportfolio@gmail.com</header>
+                </section>
+                <section class="mycontact">
+                    <header>GitHub</header>
+                </section>
+                <section class="mycontact">
+                    <header>LinkedIn</header>
+                </section>
+            </div>
+        
         </section>
-
     </main>
     <footer>
         <h3>&copy; Copyright 2021 Gift Portfolio Productions</h3>
