@@ -47,12 +47,12 @@ h1 {
     padding: 14px 20px;
 }
 .navigation a:hover {
-    color: #fff;
+    color: var(--blue);
 }
 /* Main section container styling */
 main {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
 /* Styling the hero image as background  */
 .hero-image {
@@ -97,20 +97,13 @@ h2 {
     display: flex;
 }*/
 /* Now set attributes to the about me, work and contact me sections */
-.about-me {
-    padding: 10px;
-    text-align: right;
-}
-.work {
+.about-me, 
+.work,
+.contact-me {
     padding: 16px;
 }
-.contact-me {
-    padding: 3px;
-    text-align: right;
-    flex-wrap: wrap;
-}
 /* Set styles for container holding work contents */
-.myworklist {
+.myworklist, .contact-list {
     /*flex-wrap: wrap;
     width: 80%;
     margin: 50px auto;*/
@@ -124,18 +117,23 @@ h2 {
     float: left;
     width: 25%;
 }
+
 /* Clear floats after rows */
 .myworklist::after {
     content: "";
     display: table;
     clear: both;
 }
-.mywork {
-    flex: 1 0 200px;
+.mywork, .myfirstwork {
+    /*flex: 1 0 200px;*/
     padding: 10px;
-    margin: 5px;
-    /*border: 2px solid var(--other);*/
-    width: 100%
+    margin: 25px;
+    border: 2px solid var(--other);
+    width: 100%;
+    overflow: hidden;
+}
+.mywork {
+    height: 300px;
 }
 /* Set styles for elements in common */
 .verticalLine, .verticalLine-2, .verticalLine-3 {
@@ -150,10 +148,10 @@ h2 {
     float: left;
 }*/
 .verticalLine-2 {
-    margin-left: 52px;    
+    margin-left: 58px;    
 }
 .verticalLine-3 {
-    margin-left: -20px; 
+    margin-left: -27px; 
     /*flex: 0;*/ 
 }
 .content {
@@ -161,23 +159,31 @@ h2 {
     border-left: 2px solid var(--other) ;
 }
 /* Styling paragraph tag */
-p {
+.content p {
     margin: 20px;
     font-size: 15px;
-    text-align: left;
+    text-align: justify;
 }
 /* Style image elements for the work section */
-.mywork img {
+.mywork img, .myfirstwork img {
     width: 100%;
     /*min-width: 400px;*/
     max-width: 100%;
+    transition: transform .5s ease;
+}
+.mywork:hover img,
+.myfirstwork:hover img {
+    transform: scale(1.1)
 }
 figcaption {
     background-color: var(--other);
     padding: 20px;
 }
+figcaption a:hover {
+    color: #fff;
+}
 /* Set styles for the work images a tag */
-.mywork a {
+.mywork a, .myfirstwork a {
     color: var(--white);
     font-weight: bold;
     font-style: italic;
@@ -185,12 +191,12 @@ figcaption {
 }
 /* Set styles for contact me sections including section header tag */
 .mycontact  {
-    flex: 0;
+    float: left;
     padding: 15px;
     text-align: center;
     margin: 30px;
 }
-.mycontact header {
+.mycontact p {
     font-size: 20px;
     font-weight: bold;
     text-decoration: underline;
@@ -215,7 +221,7 @@ h3 {
     .column {
         width: 50%;
     }
-    nav, main {
+    nav {
         flex-direction: column;
     }
 }
@@ -224,7 +230,7 @@ h3 {
     .column {
         width: 100%;
     }
-    .navigation, main {
+    .navigation {
         flex-direction: column;
     }
 }
