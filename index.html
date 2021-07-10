@@ -7,15 +7,37 @@
   <title>Web Developer Portfolio</title>
   <link rel="stylesheet" href="./assets/css/reset.css" />
   <link rel="stylesheet" href="./assets/css/style.css" type="text/css" screen="media"/>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
+
+    <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#about-me">ABOUT ME</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#work">PORTFOLIO</a></li>
+              <li><a href="#contact-me">CONTACT</a></li>
+              <li><a href="./assets/images/WebDeveloperResume.pdf" target="_blank" download="GiftResume">RESUME</a></li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
     <div class="container-fluid bg-1 text-center">
         <h3>Nwakaego Gift Eze</h3>
-        <img src="assets/images/photo-avatar.png" class="img-circle" alt="Profile-image">
+        <img src="assets/images/photo-avatar.png" class="img-responsive img-circle" style="display:inline" alt="Profile-image">
         <h3>Creative Web developer</h3>
     </div>
 
@@ -29,8 +51,44 @@
 
     <div class="container-fluid bg-3 text-center">
         <h3>Work</h3>
-        <p>Lorem ipsum..</p>
+        <div class="row">
+            <div class="col-md-12">
+                <p>Lorem ipsum..</p>
+                <img src="assets/images/birdwatcher.png" class="img-responsive" style="width:100%" alt="Bird Watcher">
+            </div>
+            <div class="col-sm-4">
+                <p>Lorem ipsum..</p>
+                <img src="assets/images/Team-profile-webpage.png" class="img-responsive" style="width:100%" alt="Team Profile Generator">
+            </div>
+            <div class="col-sm-4">
+                <p>Lorem ipsum..</p>
+                <img src="assets/images/notetaker-landingpage.png" class="img-responsive" style="width:100%" alt="Notetaker">
+            </div>
+            <div class="col-sm-4">
+                <img src="assets/images/SportsReel-desktop-display.png" class="img-responsive" style="width:100%" alt="Code Refactor">
+            </div>
+            <div class="col-sm-4">
+                <p>Lorem ipsum..</p>
+                <img src="assets/images/HTML-CSS.jpg" class="img-responsive" style="width:100%" alt="HTML/CSS">
+            </div>
+            <div class="col-sm-4">
+                <p>Lorem ipsum..</p>
+                <img src="assets/images/Weatherdashboard.png" class="img-responsive" style="width:100%" alt="Web API">
+            </div>
+            <div class="col-sm-4">
+                <p>Lorem ipsum..</p>
+                <img src="assets/images/code-refactor-small.png" class="img-responsive" style="width:100%" alt="Ecommerce web app">
+            </div>
+            <div class="col-sm-4">
+                <p>Lorem ipsum..</p>
+                <img src="assets/images/photoapp.jpg" class="img-responsive" style="width:100%" alt="Photo App">
+            </div>
+        </div>
     </div>
+
+    <footer class="container-fluid bg-4 text-center">
+        <h3>&copy; Copyright 2021 Gift Portfolio Productions</h3>
+    </footer>
 
 
     
@@ -97,9 +155,7 @@
         
         </section>
     </div>
-    <footer>
-        <h3>&copy; Copyright 2021 Gift Portfolio Productions</h3>
-    </footer>
+    
 </body>
 
 
