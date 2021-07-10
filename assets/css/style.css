@@ -11,6 +11,18 @@
     --other: #2a607c;
 }
 
+.bg-1 {
+    background-color: #1abc9c; /* Green */
+    color: #ffffff;
+}
+.bg-2 {
+    background-color: #474e5d; /* Dark Blue */
+    color: #ffffff;
+}
+.bg-3 {
+    background-color: #ffffff; /* White */
+    color: #555555;
+}
 /* Styling the body of the page */
 body{
     font: 16px Helvetica, Arial, Sans-Serif;
