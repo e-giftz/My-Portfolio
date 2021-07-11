@@ -6,10 +6,21 @@
 
 /* Set variables for colors used */
 :root {
-    --blue: #0965de;
-    --white: #d9dcd6;
-    --other: #2a607c;
+    --green: #1abc9c;
+    --dark-blue: #474e5d;
+    --off-white: #f5f6f7;
+    --white: #ffffff;
+    --other: #555555;
 }
+
+/* Styling the body of the page */
+body {
+    font: 20px "Montserrat", sans-serif;
+    line-height: 1.8;
+    color: #f5f6f7;
+}
+  
+p {font-size: 16px;}
 
 .navbar {
     padding-top: 15px;
@@ -27,12 +38,14 @@
   
 .container-fluid {
     padding-top: 70px;
-    padding-bottom: 70px;
+    padding-bottom:  70px;
 }
 
 .bg-1 {
     background-color: #1abc9c; /* Green */
     color: #ffffff;
+    padding-top: 150px;
+    padding-bottom: 150px;
 }
 
 .bg-2 {
@@ -44,99 +57,27 @@
     background-color: #ffffff; /* White */
     color: #555555;
 }
-/* Styling the body of the page */
-body{
-    font: 16px Helvetica, Arial, Sans-Serif;
-    padding: 24px;
-    line-height: 24px;
-    background-color: var(--white);
-}
 
-/* display header */
-header {
-    display: flex;
-    justify-content: space-between;
-    padding: 1%;
-    background-color: var(--white);
-    color: var(--other);
-}
-
-/* Set h1 and h2 elements in common */
-h1,
-h2 {
-    font-weight: bold;
-}
 
 /* Styling h1 tag */
 h1 {
-    font-size: 200%;
-}
-
-/* Styling the nav class */
-.navigation {
-    display: flex;
-    justify-content: space-between;
-}
-
-/* Styling the navigation a tags for the links*/
-.navigation a {
-    color: var(--other);
-    font-weight: bold;
-    text-decoration: none;
-    padding: 14px 20px;
-}
-
-.navigation a:hover {
-    color: var(--blue);
+    padding-bottom: 70px;
 }
 
 /* Main section container styling */
-main {
-    display: flex;
-    flex-direction: column;
-}
-
-/* Styling the hero image as background  */
-.hero-image {
-    height: 400px;
-    background-image: url("../images/web-programmer-network.jpg");
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-    position: relative;
-}
-
-/* Set the hero image text */
-.hero-text {
-    text-align: center;
-    position: absolute;
-    top: 60%;
-    left: 30%;
-    transform: translate(-60%, -30%);
-    color: var(--white);
+.row {
+    border: 2px solid var(--dark-blue);
 }
 
 /* Set properties for h2 tag */
 h2 {
     font-size: 100%;
     font-style: oblique;
-    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    text-shadow: 1px 1px 2px black, 0 0 25px green, 0 0 5px darkgreen;
+    padding-bottom: 70px;
 }
-
-/* Style container holding the profile image */
-.profile-image {
-    position: absolute;
-    width: 150px;
-    height: 150px;
-    bottom: -4%;
-    right: -1%;  
-    border: 2px solid black;
-}
-
-/* Set attributes to the profile image img tag */
-.profile-image img {
-    width: 150px;
-    height: 150px;
+h3 {
+    font-size: 150%;
 }
 
 /* Now set attributes to the about me, work and contact me sections */
@@ -145,125 +86,46 @@ h2 {
 .contact-me {
     padding: 16px;
 }
-
-/* Set styles for container holding work contents */
-.myworklist, .contact-list {
-    margin: 8px -16px;
-}
-
-.myworklist,
-.myworklist > .column {
-    padding: 8px;
-}
-
-.column {
-    float: left;
-    width: 25%;
-}
-
-/* Clear floats after rows */
-.myworklist::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.mywork, .myfirstwork {
-    /*flex: 1 0 200px;*/
-    padding: 10px;
-    margin: 25px;
-    border: 2px solid var(--other);
-    width: 100%;
+.card {
     overflow: hidden;
-}
-
-.mywork {
-    height: 300px;
-}
-
-/* Style image elements for the work section */
-.mywork img, .myfirstwork img {
+    padding: 10px;
+    margin: 5px;
+    border: 2px dotted var(--dark-blue)
     width: 100%;
+}
+.col-sm-4 {
+    overflow: hidden;
+    padding: 10px;
+}
+.card img, .col-sm-4 {
     max-width: 100%;
-    transition: transform .5s ease;
+    transition: transform .2s ease; /* Animation */
 }
 
-.mywork:hover img,
-.myfirstwork:hover img {
-    transform: scale(1.1)
-}
-
-/* Set styles for the work images a tag */
-.mywork a, .myfirstwork a {
-    color: var(--white);
-    font-weight: bold;
-    font-style: italic;
-    text-decoration: none;
-}
-
-/* Set styles for elements in common */
-.verticalLine, .verticalLine-2, .verticalLine-3 {
-    float: left;
-    padding: 20px;
-    font-size: 30px;
-    color: var(--other);
-}
-
-.verticalLine-2 {
-    margin-left: 58px;    
-}
-
-.verticalLine-3 {
-    margin-left: -27px; 
-    /*flex: 0;*/ 
-}
-
-.content {
-    display: flex;
-    border-left: 2px solid var(--other) ;
-}
-
-/* Styling paragraph tag */
-.content p {
-    margin: 20px;
-    font-size: 15px;
-    text-align: justify;
+.card:hover img,
+.col-sm-4:hover img {
+    transform: scale(1.1);
 }
 
 figcaption {
-    background-color: var(--other);
-    padding: 20px;
+    background-color: var(--dark-blue);
+    padding: 15px;
 }
 
 figcaption a:hover {
     color: #fff;
 }
 
-/* Set styles for contact me sections including section header tag */
-.mycontact  {
-    float: left;
-    padding: 15px;
-    text-align: center;
-    margin: 30px;
-}
-
-.mycontact p {
-    font-size: 20px;
-    font-weight: bold;
-    text-decoration: underline;
-    color: var(--other);
-}
-
 /* Set footer styles */
 footer {
-    padding: 30px;
+    padding: 20px;
     flex-shrink: 0;
     text-align: center;
-    background-color: var(--blue);
+    background-color: var(--green);
 }
 
 /* Set style for footer h3 tag */
-h3 {
+footer h3 {
     font-size: 20px;
 }
 
@@ -304,9 +166,6 @@ h3 {
     .navigation, main {
         flex-direction: column;
     }
-    /*.mywork img, myfirstwork img {
-        width: 100%;
-    } */
 }
 
 
