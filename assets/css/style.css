@@ -90,7 +90,7 @@ h3 {
     overflow: hidden;
     padding: 10px;
     margin: 5px;
-    border: 2px dotted var(--dark-blue)
+    border: 2px var(--dark-blue);
     width: 100%;
 }
 .col-sm-4 {
@@ -131,9 +131,6 @@ footer h3 {
 
 /* For responsive design, set max-width values for  larger screens of 992px */
 @media screen and (max-width: 900px) {
-    /*.mywork {
-        width: 50%;
-    }*/
     .column {
         width: 50%;
     }
@@ -160,12 +157,7 @@ footer h3 {
     body {
         padding: 0px;
     }
-    .column, .myfirstwork {
-        width: 75%;
-    }
-    .navigation, main {
-        flex-direction: column;
-    }
+
 }
 
 
